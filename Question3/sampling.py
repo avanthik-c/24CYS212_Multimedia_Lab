@@ -42,7 +42,7 @@ final.show()
 
 a=2
 # a is sq root of the factor by which we need to downsample
-#if factor = 1/4 a=2
+#if factor = 1/4  => a=2
 
 og_img = Image.open('girl.jpg')
 og_img=np.array(og_img)
