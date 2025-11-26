@@ -38,11 +38,12 @@ final.show()
 
 #******************************************#
 #spatial sampling
-#can do both axis if factor has sq root
-
-a=2
-# a is sq root of the factor by which we need to downsample
+#******************************************#
+factor=4
+a=np.sqrt(factor)
+# a is sq root of the factor by which we need to downsample if its aperfect square
 #if factor = 1/4  => a=2
+#if factor is not a perfect square the downsampling will be uneven along both axis ration wise
 
 og_img = Image.open('girl.jpg')
 og_img=np.array(og_img)
